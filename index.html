@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: fit-content;
+            margin: 50px auto;
+            border: 1px solid black;
+            text-align: center;
+        }
+        #div2 *{
+            margin: 10px;
+
+        }
+        input{
+            width: 500px;
+            padding: 20px;
+        }
+        button{
+            color: white;
+            background-color: blue;
+            border: 0;
+            padding: 20px;
+            width: 500px;
+        }
+        #randomname{
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <h2>Advanced JavaScript Quiz</h2>
+        <div id="div2">
+            <input type="text" id="name" placeholder="Enter Your Name "><br>
+            <button id="randomname" onclick="randam()">Random Name</button><br>
+            <button id="start">Start Quiz</button><br>
+            <button id="viewscore">View High Scores</button><br>
+        </div>
+    </div>
+    <script src="page1.js"></script>
+</body>
+</html>

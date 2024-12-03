@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: fit-content;
+            margin: 50px auto;
+            border: 1px solid black;
+            text-align: center;
+        }
+        #div1 *{
+            margin: 10px;
+
+        }
+        input{
+            width: 500px;
+            padding: 20px;
+        }
+        button{
+            color: white;
+            background-color: blue;
+            border: 0;
+            padding: 20px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h3>Advanced JavaScript Quiz</h3>
+        <p></p>
+        <p id="qun">Which keyword is used to declare a constant variable in JavaScript?</p>
+        <button id="btn1" onclick="btn('a')">var</button> <br>
+        <button id="btn2" onclick="btn('a')">let</button> <br>
+        <button id="btn3" onclick="btn('a')">const</button> <br>
+        <button id="btn4" onclick="btn('a')">fixed</button> <br>
+        <button id="submit">submit</button> <br>
+    </div>
+    <script>
+        const qun = document.getElementById("qun")
+        const btn1 = document.getElementById("btn1")
+        const btn2 = document.getElementById("btn2")
+        const btn3 = document.getElementById("btn3")
+        const btn4 = document.getElementById("btn4")
+        const sub = document.getElementById("submit")
+
+        sub.addEventListener("click", (e) => {
+            btn1.textContent = "var"
+            btn1.textContent = "let"
+            btn1.textContent = "const"
+            btn1.textContent = "fixed"
+            function btn(){
+                btn1.style.backgroundColor = "yellow"
+            }
+        })
+
+
+
+
+
+    </script>
+</body>
+</html>
